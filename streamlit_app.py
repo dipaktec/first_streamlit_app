@@ -66,7 +66,7 @@ if streamlit.button("Add a fruit to the list:"):
   back_from_function = insert_row_snowflake(fruit_choice_add)
   streamlit.write(back_from_function)
 
-my_cur.execute("insert into pc_rivery_db.public.fruit_load_list values ('from streamlit')")
+streamlit.stop()
 
 
 
