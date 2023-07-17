@@ -24,7 +24,7 @@ try:
   fruit_choice = streamlit.text_input('what fruit would you like information about ' , 'Kiwi')
   if not fruit_choice:
     streamlit.error("Please select fruit to get information")
-  else
+  else:
     streamlit.write('user entered '+  fruit_choice)
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
     # write your own comment -this normalizes the json to better readble format 
